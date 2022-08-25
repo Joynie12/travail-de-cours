@@ -1,0 +1,856 @@
+@font-face {
+    font-family: "Open Sans";
+    src: local("Open Sans"),
+      url(../FONTS/OpenSans-Regular.woff);
+    src: url(../FONTS/OpenSans-Bold.woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .header {
+    height: 450px;
+    min-width: 100%;
+    background-image: url(../IMAGES/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .header::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.45;
+    z-index: -1;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    width: 179px;
+    padding-top: 28px;
+    position: absolute;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    bottom: 0px;
+    left: 678px;
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .menu-list-items:nth-child(n + 2) {
+    margin-left: 33px;
+  }
+  
+  .menu_items {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .menu_items:hover {
+    text-decoration: underline;
+  }
+  
+  .banner {
+    position: absolute;
+    top: 135px;
+    left: 235px;
+    right: 230px;
+  }
+  
+  .banner-text {
+    font-size: 47px;
+    line-height: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+  
+  .main {
+    padding-top: 64px;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .trands {
+    box-sizing: border-box;
+    min-width: 100%;
+    height: 380px;
+    margin-bottom: 154px;
+    background: blue;
+  }
+  
+  .trand-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+    margin-bottom: 45px
+  }
+  
+  .trand-title::after {
+    content: "";
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    position: absolute;
+    margin-top: 35px;
+    right: 48.7%;
+  }
+  
+  .trand-photo {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    z-index: 0;
+  }
+  
+  .trand-box {
+    width: 100%;
+    align-self: flex-end;
+  }
+
+  .trand-box:nth-child(-n+3) {
+    margin-right: 4px;
+  }
+
+  .trand-photos {
+    width: 100%;
+    background-color: #eff6f1;
+    filter: brightness(60%);
+  }
+
+  /* .text-box {
+    display: flex;
+    width: 100%;
+    background: greenyellow;
+  } */
+
+  .frame {
+    position:relative;
+    display: flex;
+    top: -250px;
+    left: 18px;
+    max-width: 370px;
+    background-color: rgba(0,0,0,0);
+    border: 3px solid #b59f5b;
+    align-self: flex-end;
+    
+  }
+
+  .version {
+    display: flex;
+    margin:auto;
+    flex-flow: column;
+  }
+
+  .version-tag {
+    margin-left: 35px;
+    margin-top: 39px;
+    margin-bottom: 15px;
+  }
+
+  .version-tags {
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .version-tags:hover {
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: underline;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans";
+  }
+
+  .version-text {
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    margin-left: 35px;
+    margin-top: 0px;
+    margin-bottom: 37px;
+  }
+  
+  .news-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+  }
+  
+  .news-list {
+    width: 793px;
+    max-height: 296px;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 13px;
+    margin-bottom: 58px;
+  }
+  
+  .news-photo {
+    width: 381px;
+    height: 294px;
+    background-color: #eff6f1;
+  }
+  
+  .news-tags {
+    position: absolute;
+    top: -12px;
+    right: 243px;
+    left: 427px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .news-tags-items:nth-child(n + 2) {
+    margin-left: 19px;
+  }
+  
+  .tags-items {
+    font-size: 14px;
+    line-height: 40px;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .tags-items:hover {
+    text-decoration: underline;
+  }
+  
+  .news-text {
+    position: absolute;
+    top: 8px;
+    right: 36px;
+    left: 426px;
+    text-transform: uppercase;
+    font-size: 19px;
+    line-height: 24px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+    min-height: 39px;
+  }
+  
+  .news-text:hover {
+    color: #b59f5b;
+  }
+  
+  .time-autor {
+    position: absolute;
+    top: 89px;
+    left: 426px;
+    max-width: 367px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  .time {
+    margin-left: -5px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #888888;
+    font-weight: 400;
+    font-family: "Open Sans";
+    box-sizing: content-box;
+  }
+  
+  .autor {
+    margin-top: 0px;
+    margin-left: 14px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+  }
+  
+  .description {
+    position: absolute;
+    top: 146px;
+    right: 15px;
+    left: 424px;
+    width: 367px;
+    max-height: 62px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 400;
+    font-family: "Open Sans";
+    box-sizing: border-box;
+  }
+  
+  .new-posts {
+    position: absolute;
+    top: 0px;
+    right: 31px;
+    height: 602px;
+    width: 272px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+  }
+  
+  .caption {
+    margin-top: -10px;
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .caption::after {
+    content: "";
+    width: 66px;
+    height: 3px;
+    position: absolute;
+    left: 49%;
+    top: 4%;
+    background-color: #b59f5b;
+    transform: translateX(-50%);
+  }
+  
+  .posts {
+    margin-top: 37px;
+    margin-bottom: 23px;
+  }
+  
+  .post-block {
+    position: relative;
+    min-height: 70px;
+    max-width: 269px;
+    margin: -7px 1px 19px 1px;
+  }
+  
+  .new-posts-photo {
+    padding-top: 6px;
+    height: 70px;
+    width: 70px;
+    padding-right: 20px;
+  }
+  
+  .posts-time {
+    font-size: 11px;
+    line-height: 40px;
+    color: #888888;
+    font-weight: 400;
+    font-family: "Open Sans";
+    position: absolute;
+    top: -10px;
+    left: 90px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .posts-text {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-overflow: "";
+  }
+  
+  .posts-text:hover {
+    color: #b59f5b;
+  }
+  
+  .search {
+    display: flex;
+    margin-top: 60px;
+  }
+  
+  .input {
+    box-sizing: border-box;
+    width: 221px;
+    height: 48px;
+    margin-left: 1px;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 40px;
+    color: #888888;
+    font-weight: 400;
+    font-family: "Open Sans";
+    background-color: #f4f7f6;
+    border: 1px solid #cbd1d4;
+    padding-left: 18px;
+  }
+  
+  .input:focus {
+    border: 1px solid #b59f5b;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .button {
+    width: 48px;
+    height: 48px;
+    background-color: #b59f5b;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center center;
+    border: none;
+  }
+  
+  .button:hover {
+    background-color: #323232;
+  }
+  
+  .mailing-list {
+    position: absolute;
+    top: 593px;
+    right: 30px;
+    height: 760px;
+    max-width: 272px;
+    box-sizing: border-box;
+    margin-top: 62px;
+  }
+  
+  .mailing-caption {
+    margin-top: 0px;
+    margin-left: -7px;
+    font-size: 14px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .mailing-caption::after {
+    content: "";
+    width: 66px;
+    height: 3px;
+    position: absolute;
+    left: 49%;
+    top: 4.5%;
+    background-color: #b59f5b;
+    transform: translateX(-50%);
+  }
+  
+  .e-mail {
+    display: flex;
+    position: relative;
+    margin-left: 1px;
+    margin-top: 28px;
+  }
+  
+  .email-input {
+    box-sizing: border-box;
+    width: 269px;
+    height: 48px;
+    padding: 0px 1px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 40px;
+    color: #888888;
+    font-weight: 400;
+    font-family: "Open Sans";
+    background-color: #f4f7f6;
+    padding-left: 15px;
+    border: 1px solid #cbd1d4;
+  }
+  
+  .email-input:focus {
+    border: 1px solid #b59f5b;
+  }
+  
+  .email-button {
+    margin: 17px 1px 0px 1px;
+    width: 269px;
+    height: 49px;
+    background-color: #b59f5b;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .email-button:hover {
+    background-color: #323232;
+  }
+  
+  .click-email-button {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .tags-header {
+    margin-top: 52px;
+    font-size: 14px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .tags-header::after {
+    content: "";
+    width: 66px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    background-color: #b59f5b;
+    transform: translateX(-50%);
+  }
+  
+  .tags {
+    margin-top: 35px;
+    margin-left: -15px;
+  }
+  
+  .tags:nth-child(n + 2) {
+    padding-left: 15px;
+  }
+  
+  .tags-button {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 6px;
+    margin-right: 5px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+    background-color: rgba(244, 243, 241, 0);
+    border: 3px solid #eeeeee;
+    max-width: 90px;
+    padding: 5px 11px;
+    background-repeat: no-repeat;
+  }
+  
+  .click-button {
+    color: #0f0d0e;
+    text-decoration: none;
+  }
+  
+  .tags-button:hover {
+    border: 3px solid #b59f5b;
+  }
+  
+  .themes-header {
+    margin-top: 35px;
+    margin-left: 2px;
+    font-size: 14px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .themes-header::after {
+    content: "";
+    width: 66px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    background-color: #b59f5b;
+    transform: translateX(-50%);
+  }
+  
+  .themes {
+    margin-top: 16px;
+  }
+  
+  .themes-links {
+    text-decoration: none;
+  }
+  
+  .themes-name {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 47px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+  }
+  
+  .themes-name:hover {
+    color: #b59f5b;
+  }
+  
+  .degree {
+    font-size: 12px;
+    line-height: 36px;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans";
+    margin-left: 4px;
+  }
+  
+  .themes-line {
+    width: 271px;
+    height: 1px;
+    background-color: #eeeeee;
+  }
+
+  .our-products {
+    box-sizing: border-box;
+    max-width: 1170px;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-photos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-photo{
+    width: 300px;
+    height: 204px;
+    background-color: #eff6f1;
+  }
+
+  .product-photo:nth-child(odd) {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .offer {
+    display: flex;
+    min-width: 100%;
+    background-color: rgba(0,0,0,0);
+    justify-content: space-between;
+    margin-top: -31px;
+  }
+
+  .offer-frame {
+    max-width: 347px;
+    background-color: rgba(0,0,0,0);
+    border: 3px solid #b59f5b;
+  }
+  
+  .offer-header {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+    margin-left: 18px;
+    margin-top: 57px;
+  }
+
+  .offer-text {
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-bottom: 24px;
+    margin-left: 18px;
+  }
+
+  .offer-link {
+    color: #b59f5b;
+    text-decoration: none;
+  }
+
+  .offer-link:hover {
+    text-decoration: underline;
+  }
+
+  .price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+  }
+
+  .offer-price {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    align-self: flex-end;
+  }
+
+  .offer-price-old {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+  }
+
+  .offer-price-new {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans";
+  }
+
+  .offer-button {
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    width: 140px;
+    height: 48px;
+    background-color: #b59f5b;
+    border: none;
+    margin-right: 18px;
+  }
+
+  .offer-button:hover {
+    background-color: #323232;
+  }
+
+  .footer {
+    box-sizing: border-box;
+    max-width: 1660px;
+    height: 169px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .footer-line {
+    position: relative;
+    margin: 0px 245px;
+    width: 1170px;
+    height: 83px;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-social {
+    margin-top: 38px;
+    padding: 0px;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .social-network {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 20px;
+    width: 20px;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .pinterest {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 20px;
+    width: 20px;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .twitter {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 20px;
+    width: 20px;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .footer-text {
+    margin-top: 65px;
+    margin-left: 8px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #999999;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+  }
+  
